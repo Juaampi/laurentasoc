@@ -64,6 +64,37 @@ textarea {
   padding: 6rem 0;
 }
 
+.intro-strip {
+  padding: 0 0 2rem;
+}
+
+.intro-strip-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.intro-item {
+  padding: 1.1rem 1.25rem;
+  border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 44px rgba(4, 15, 29, 0.16);
+  backdrop-filter: blur(14px);
+}
+
+.intro-item strong {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: #fff;
+}
+
+.intro-item span,
+.intro-item a {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
 .practice-section,
 .contact-section {
   background: #f5f7fb;
@@ -370,6 +401,24 @@ textarea {
   max-width: 58ch;
 }
 
+.about-note {
+  margin-top: 1.5rem;
+  padding: 1.25rem 1.35rem;
+  border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.about-note strong {
+  display: block;
+  margin-bottom: 0.55rem;
+  color: #fff;
+}
+
+.about-note p {
+  margin: 0;
+}
+
 .practice-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -463,6 +512,10 @@ textarea {
   margin-bottom: 0.45rem;
   color: var(--text-dark);
   font-size: 1.05rem;
+}
+
+.stat-card-highlight {
+  background: linear-gradient(180deg, rgba(216, 177, 93, 0.18) 0%, rgba(255, 255, 255, 0.92) 100%);
 }
 
 .contact-info,
@@ -587,6 +640,14 @@ textarea {
   gap: 1rem;
 }
 
+.footer-contact {
+  margin-top: 1rem;
+}
+
+.footer-contact a {
+  color: var(--text);
+}
+
 .footer-credit {
   margin-top: 1.25rem;
   color: #8fa7bf;
@@ -646,6 +707,7 @@ textarea {
 }
 
 @media (max-width: 980px) {
+  .intro-strip-grid,
   .hero-grid,
   .about-grid,
   .contact-grid,
@@ -696,6 +758,7 @@ textarea {
     color: #fff;
   }
 
+  .intro-strip-grid,
   .hero-grid,
   .about-grid,
   .contact-grid,
