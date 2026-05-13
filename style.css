@@ -110,7 +110,10 @@ textarea {
 .brand img {
   width: 62px;
   height: 62px;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center;
+  padding: 0.2rem;
+  background: rgba(255, 255, 255, 0.02);
   border-radius: 18px;
   border: 1px solid rgba(255, 255, 255, 0.16);
   box-shadow: 0 12px 32px rgba(6, 17, 31, 0.24);
@@ -584,6 +587,16 @@ textarea {
   gap: 1rem;
 }
 
+.footer-credit {
+  margin-top: 1.25rem;
+  color: #8fa7bf;
+}
+
+.footer-credit a {
+  color: var(--accent-strong);
+  font-weight: 600;
+}
+
 .footer-bottom {
   margin-top: 2.5rem;
   padding: 1.2rem 1rem 1.7rem;
@@ -616,13 +629,9 @@ textarea {
 }
 
 .whatsapp-float svg {
-  width: 28px;
-  height: 28px;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 1.6;
-  stroke-linecap: round;
-  stroke-linejoin: round;
+  width: 30px;
+  height: 30px;
+  fill: currentColor;
 }
 
 .reveal {
